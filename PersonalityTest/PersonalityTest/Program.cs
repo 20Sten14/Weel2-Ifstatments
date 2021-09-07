@@ -4,6 +4,7 @@ namespace PersonalityTest
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             //Programm küsib kasutaha käest tema lemmik värvi
@@ -14,10 +15,9 @@ namespace PersonalityTest
 
 
             Console.WriteLine("Mis on sinu lemmik värv?");
-            String Usercolor = Console.ReadLine();
+            String Usercolor = Console.ReadLine().ToLower();
 
             if (Usercolor == "punane")
-
             {
                 Console.WriteLine("Sa oled romantiline!");
             }
@@ -31,7 +31,7 @@ namespace PersonalityTest
             }
             else 
             {
-                Console.WriteLine("Sa oled lihtsalt Maun:D");
+                Console.WriteLine("Ei");
             }
 
         }
